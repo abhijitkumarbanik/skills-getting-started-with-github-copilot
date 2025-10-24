@@ -95,12 +95,23 @@ section h3 {
   padding: 3px 0;
   color: #666;
   font-size: 0.9em;
+  display: flex;
+  align-items: center;
 }
 
-.participants-list li:before {
-  content: "•";
-  color: #1a237e;
-  margin-right: 8px;
+.participant-email {
+  flex: 1;
+}
+
+.delete-icon {
+  cursor: pointer;
+  color: #c62828;
+  margin-left: 10px;
+  font-size: 1.1em;
+  transition: color 0.2s;
+}
+.delete-icon:hover {
+  color: #a31515;
 }
 
 .form-group {
